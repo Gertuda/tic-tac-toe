@@ -142,7 +142,7 @@ function restartClick() {
 }
 
 function checkCell() {
-  if (stepCount === 8) {
+  if (stepCount <= 8) {
     title[0].classList.remove("hidden");
     message[0].innerHTML = "It's a draw!";
     for (var i = 0; i < ceil.length; i++) {
@@ -229,49 +229,3 @@ function arraysEqual(arr1, arr2) {
 
   return true;
 }
-
-// for (var w = 0, wLen = winCombinations.length; w < wLen; w++) {
-//   var someWinArr = winCombinations[w],
-//     count = 0;
-//   if (someWinArr.indexOf(number) !== -1) {
-//     for (var k = 0, kLen = someWinArr.length; k < kLen; k++) {
-//       if (arr.indexOf(someWinArr[k]) !== -1) {
-//         count++;
-//         if (count === 3) {
-//           return true;
-//         }
-//       }
-//     }
-//     count = 0;
-//   }
-// }
-
-// function checkWin(arr) {
-//   if (winCombinations[0].every(number => arr.includes(number))) {
-//     CheckWinComb(winCombinations[0]);
-//     return true;
-//   } else if (winCombinations[1].every(number => arr.includes(number))) {
-//     CheckWinComb(winCombinations[1]);
-//     return true;
-//   } else if (winCombinations[2].every(number => arr.includes(number))) {
-//     CheckWinComb(winCombinations[2]);
-//     return true;
-//   } else if (winCombinations[3].every(number => arr.includes(number))) {
-//     CheckWinComb(winCombinations[3]);
-//     return true;
-//   } else if (winCombinations[4].every(number => arr.includes(number))) {
-//     CheckWinComb(winCombinations[4]);
-//     return true;
-//   } else if (winCombinations[5].every(number => arr.includes(number))) {
-//     CheckWinComb(winCombinations[5]);
-//     return true;
-//   } else if (winCombinations[6].every(number => arr.includes(number))) {
-//     CheckWinComb(winCombinations[6]);
-//     return true;
-//   } else if (winCombinations[7].every(number => arr.includes(number))) {
-//     CheckWinComb(winCombinations[7]);
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }

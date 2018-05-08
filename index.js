@@ -142,7 +142,7 @@ function restartClick() {
 }
 
 function checkCell() {
-  if (stepCount <= 8) {
+  if (stepCount >= 8) {
     title[0].classList.remove("hidden");
     message[0].innerHTML = "It's a draw!";
     for (var i = 0; i < ceil.length; i++) {

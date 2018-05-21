@@ -51,9 +51,11 @@ function currentStep(event) {
     if (player === "X") {
       dataX.push(num);
       event.target.classList.add("ch");
+      dataXredu = [];
     } else {
       data0.push(num);
       event.target.classList.add("r");
+      data0redu = [];
     }
     if (
       (data0.length > 2 || dataX.length > 2) &&
@@ -92,6 +94,8 @@ function unlockUndo_Redo() {
     redo[0].setAttribute("disabled", true);
   }
 }
+
+hyi;
 
 function undoClick() {
   if (player === "X") {
